@@ -1,0 +1,34 @@
+#include <stdio.h>
+void test(){
+      printf("test()....\n");	
+}
+
+int test2(){
+	printf("test2()...\n");
+	return 100;
+}
+void test3(int x){
+	printf("test3(%d)...\n",x);
+}
+
+int test4(int x){
+	printf("test4(%d)...\n",x);
+	return 1000;
+}
+
+int main(int argc, char **argv)
+{
+	
+	printf("function ....\n");
+	
+	test();
+	
+	printf("test2() : %d\n",test2());
+	
+	test3(999);
+	
+	printf("test4(777) : %d\n",test4(777));
+	
+	return 0;
+}
+
